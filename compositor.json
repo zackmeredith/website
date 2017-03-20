@@ -1,0 +1,83 @@
+{
+  "name": "zackmeredith/website",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "name",
+  "branch": "master",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/zackmeredith/website",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "website",
+      "subhead": "This is a test project for your website",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "website: This is a test project for your website",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "zackmeredith",
+          "repo": "website"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/zackmeredith/website",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/zackmeredith",
+          "text": "zackmeredith"
+        }
+      ]
+    }
+  ]
+}
